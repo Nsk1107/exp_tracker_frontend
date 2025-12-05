@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Transaction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Add Transaction</h2>
+
+        <form id="txnForm">
+
+            <label>Account</label>
+            <select id="account">
+                <option>Cash</option>
+                <option>BoC</option>
+                <option>MoneyMarket-1</option>
+                <option>Commercial</option>
+            </select>
+
+            <label>Category</label>
+            <select id="category">
+                <option>Fuel</option>
+                <option>Food & Drinks</option>
+                <option>Electronics, accessories</option>
+                <option>Groceries</option>
+                <option>Others</option>
+            </select>
+
+            <label>Amount</label>
+            <input id="amount" type="number" step="0.01" min="0.01">
+
+            <label>Date</label>
+            <input id="date" type="date">
+
+            <label>Type</label>
+            <select id="type">
+                <option value="Income">Income</option>
+                <option value="Expense" selected>Expense</option>
+            </select>
+
+            <label>Note</label>
+            <textarea id="note"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="msg"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
